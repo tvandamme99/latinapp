@@ -1,0 +1,20 @@
+.productItem{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 0fr); 
+    
+}
+.item-con{
+    margin:0px 20px 20px 20px;
+}
+.buttonAction{
+    justify-content: center;
+}
+.title{
+    justify-content: center;
+    align-items: center;
+}
+img{
+    max-width: 200px;
+    min-width: 200px;
+}

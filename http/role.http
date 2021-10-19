@@ -1,0 +1,39 @@
+
+###------------------------------
+###Create Route
+POST http://localhost:8080/role
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+{
+  "name": "benevole"
+}
+
+###------------------------------
+###modif role
+PUT http://localhost:8080/role/NAME_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+{
+  "name": "admin"
+}
+
+
+###------------------------------
+###Del role
+DELETE http://localhost:8080/role/NAME_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+###------------------------------
+###get all role
+get http://localhost:8080/role/NAME_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+###------------------------------
+###get one role
+get http://localhost:8080/role/NAME_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE

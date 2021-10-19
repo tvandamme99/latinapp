@@ -1,0 +1,46 @@
+
+###------------------------------
+###Create Route
+POST http://localhost:8080/order
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+{ 
+  "date": "1999-06-02T00:00:00.000Z",
+  "userId": "1s00.000Z",
+  "eventId": "soft",
+  "typePaiement": "cb",
+  "total": "6,5"
+}
+
+###------------------------------
+###modif order
+PUT http://localhost:8080/order/ID_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+{ 
+  "date": "1999-06-02T00:00:00.000Z",
+  "userId": "1999f0.000Z",
+  "eventId": "sft",
+  "typePaiement": "cb",
+  "total": "6f5"
+}
+
+###------------------------------
+###Del order
+DELETE http://localhost:8080/ID_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+###------------------------------
+###get all order
+get http://localhost:8080/order/
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+###------------------------------
+###get one order
+get http://localhost:8080/order/ID_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE

@@ -1,0 +1,68 @@
+GET http://localhost:8080/
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+### Get profil
+GET http://localhost:8080/user/profil
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+###------------------------------
+###Login Route
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "tel": "0607080910",
+  "password": "testtest"
+}
+
+###------------------------------
+###Register Route
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+  "nom": "arnaud",
+  "prenom": "arnaud",
+  "tel": "0607080910",
+  "email": "arnaud@test.fr",
+  "password": "testtest",
+  "role": "admin"
+}
+
+###------------------------------
+###Refresh token Route
+POST http://localhost:8080/refresh-token
+Content-Type: application/json
+Authorization: Token REFRESH_TOKEN_HERE
+
+
+###------------------------------
+###Logout Route
+DELETE http://localhost:8080/user/logout
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+
+###------------------------------
+###modif user Route
+PUT http://localhost:8080/user/update
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+{
+  "nom": "test3",
+  "prenom": "test3",
+  "tel": "0651796162",
+  "email": "test3@test.fr",
+  "password": "testtest",
+  "role": "admin"
+}
+
+
+###------------------------------
+###Del user Route
+DELETE http://localhost:8080/user/delete
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE

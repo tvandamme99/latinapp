@@ -1,0 +1,14 @@
+
+.buttons{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(6, 0fr); 
+    
+}
+.filter__boutton{
+    height:48px;
+    width: 120px;
+    margin:0px 10px;
+    font-weight: bold;
+    
+}

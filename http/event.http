@@ -1,0 +1,44 @@
+
+###------------------------------
+###Create Route
+POST http://localhost:8080/event
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+{
+  "name": "soft",
+  "recurrence": "1999-06-02T00:00:00.000Z",
+  "description": "rouge"
+}
+
+###------------------------------
+###modif event
+PUT http://localhost:8080/event/NAME_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+{
+  "name": "sodft",
+  "recurrence": "1999-06d-02T00:00:00.000Z",
+  "description": "roduge"
+}
+
+
+###------------------------------
+###Del event
+DELETE http://localhost:8080/event/NAME_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+
+###------------------------------
+###get all event
+get http://localhost:8080/event/NAME_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+###------------------------------
+###get one event
+get http://localhost:8080/event/NAME_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE

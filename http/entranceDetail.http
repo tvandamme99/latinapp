@@ -1,0 +1,46 @@
+
+###------------------------------
+###Create Route
+POST http://localhost:8080/entranceDetail
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+{ 
+  "entranceId": "soft",
+  "formulaId": "rt",
+  "quantity": "quantity",
+  "typePaiement": "cb",
+  "total": "6,5"
+}
+
+###------------------------------
+###modif entranceDetail
+PUT http://localhost:8080/entranceDetail/ID_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+{ 
+  "entranceId": "soffdt",
+  "formulaId": "rtfd",
+  "quantity": "quafdntity",
+  "typePaiement": "cb",
+  "total": "6,fd5"
+}
+
+###------------------------------
+###Del entranceDetail
+DELETE http://localhost:8080/ID_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+###------------------------------
+###get all entranceDetail
+get http://localhost:8080/entranceDetail/
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+###------------------------------
+###get one entranceDetail
+get http://localhost:8080/entranceDetail/ID_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE

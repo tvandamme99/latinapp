@@ -1,0 +1,44 @@
+
+###------------------------------
+###Create Route
+POST http://localhost:8080/oneEvent
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+{ 
+  "eventId": "soft",
+  "dateDebut": "1999-06-02T00:00:00.000Z",
+  "dateFin": "1999-06-02T00:00:00.000Z",
+  "description": "6,5"
+}
+
+###------------------------------
+###modif oneEvent
+PUT http://localhost:8080/oneEvent/ID_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+{ 
+  "eventId": "sodft",
+  "dateDebut": "1999-06-02T00:00:00.000Z",
+  "dateFin": "1999-06-02T00:00:00.000Z",
+  "description": "6d,5"
+}
+
+###------------------------------
+###Del oneEvent
+DELETE http://localhost:8080/ID_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+###------------------------------
+###get all oneEvent
+get http://localhost:8080/oneEvent/
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE
+
+###------------------------------
+###get one oneEvent
+get http://localhost:8080/oneEvent/ID_HERE
+Content-Type: application/json
+Authorization: Token ACCESS_TOKEN_HERE

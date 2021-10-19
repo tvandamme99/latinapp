@@ -1,0 +1,35 @@
+.navbar__left{
+    display:flex;
+    z-index:1;
+    flex-direction: column;
+    height: 100%;
+    width: 15%;
+    padding: 0px 0px;
+    position: fixed;
+    z-index: 10;
+    top: 75px;
+    left: 0;
+    background-color: #5A5965;
+    color:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.navbar__link{
+    display:flex;
+    padding-left:20px ;
+    z-index:1;
+    /* justify-content: center;   */
+}
+.cloture{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    /* align-self: flex-end; */
+}
+.cloture > button {
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+}

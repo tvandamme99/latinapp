@@ -1,0 +1,17 @@
+.contentTicket{
+    margin-bottom: 50px;
+}
+.headerRow{
+    display: flex;
+    flex-direction: row;
+}
+.headerRow > p:nth-child(1) {
+    width:50%;
+    text-align: left;
+    font-weight: bold;
+}
+.headerRow > p:nth-child(2) {
+    width:50%;
+   
+    text-align: right;
+}
